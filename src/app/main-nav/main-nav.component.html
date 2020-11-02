@@ -1,0 +1,19 @@
+<mat-drawer-container (backdropClick)="sidenav.close()" fullscreen>
+  <mat-drawer #sidenav (keydown.escape)="sidenav.close()" disableClose>
+    <mat-list>
+      <mat-list-item>
+        <button mat-button routerLink="/angular" routerLinkActive="active" (click)="sidenav.close()">Angular</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button routerLink="/docker" routerLinkActive="active" (click)="sidenav.close()">Docker</button>
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar color="primary">
+      <mat-icon (click)="sidenav.open()" class="menu">menu</mat-icon>
+      <span>Ming's Blog</span>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
