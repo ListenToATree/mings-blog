@@ -12,7 +12,15 @@
   <mat-drawer-content>
     <mat-toolbar color="primary">
       <mat-icon (click)="sidenav.open()" class="menu">menu</mat-icon>
-      <span>Ming's Blog</span>
+      <h1>Ming's Blog</h1>
+      <span class="menu-spacer"></span>
+      <div>
+        {{ time | date: 'longDate' }}
+      </div>
+      <mat-divider [inset]="true"></mat-divider>
+      <div>
+        {{ $time | async | date: 'hh:mm:ss a' }}
+      </div>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-drawer-content>
