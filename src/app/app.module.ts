@@ -6,10 +6,12 @@ import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MainNavComponent} from './main-nav/main-nav.component';
 import {MaterialSharedModule} from './material-shared.module';
-import { LearnAngularComponent } from './learn-angular/learn-angular.component';
-import { LearnDockerComponent } from './learn-docker/learn-docker.component';
-import { AngularComponent } from './learn-angular/angular/angular.component';
+import {LearnAngularComponent} from './learn-angular/learn-angular.component';
+import {LearnDockerComponent} from './learn-docker/learn-docker.component';
+import {AngularComponent} from './learn-angular/angular/angular.component';
 import {MarkdownModule} from 'ngx-markdown';
+import {CardComponent} from './card/card.component';
+import { DockerComponent } from './learn-docker/docker/docker.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import {MarkdownModule} from 'ngx-markdown';
     MainNavComponent,
     LearnAngularComponent,
     LearnDockerComponent,
-    AngularComponent
+    AngularComponent,
+    CardComponent,
+    DockerComponent
   ],
   imports: [
     BrowserModule,
