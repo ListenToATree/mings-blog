@@ -17,10 +17,12 @@
       <div>
         {{ time | date: 'longDate' }}
       </div>
-      <mat-divider [inset]="true"></mat-divider>
-      <div>
+      <div class="mx-3">
         {{ $time | async | date: 'hh:mm:ss a' }}
       </div>
+      <a href="https://github.com/DailySettle/mings-blog" mat-button aria-label="Github icon">
+        <img src="assets/github.svg" height="50">
+      </a>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-drawer-content>
