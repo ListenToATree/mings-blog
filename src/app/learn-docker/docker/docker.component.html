@@ -44,5 +44,29 @@
         Then follow the installation instructions, choosing the new version you want to install.
       </app-card>
     </div>
+
+    <div class="col-md-6">
+      <app-card title="Run Nginx in Docker" ngPreserveWhitespaces>
+        #### RUN NGINX
+        ```
+        docker run --name some-nginx -v $(pwd)/some/content:/usr/share/nginx/html:ro -d -p 80:80 nginx:alpine
+        ```
+        > Use mount to update server without restart container
+        ---
+        #### CONFIGURATION
+        ```
+        docker run --name tmp-nginx-container -d nginx
+        docker cp tmp-nginx-container:/etc/nginx/nginx.conf /host/path/nginx.conf
+        docker rm -f tmp-nginx-container
+        ```
+        ---
+        #### DOCKERFILE
+        ```
+        FROM nginx
+        COPY static-html-directory /usr/share/nginx/html
+        COPY nginx.conf /etc/nginx/nginx.conf
+        ```
+      </app-card>
+    </div>
   </div>
 </div>

@@ -12,6 +12,10 @@ import {AngularComponent} from './learn-angular/angular/angular.component';
 import {MarkdownModule} from 'ngx-markdown';
 import {CardComponent} from './card/card.component';
 import { DockerComponent } from './learn-docker/docker/docker.component';
+import { LearnLinuxComponent } from './learn-linux/learn-linux.component';
+import { BashComponent } from './learn-linux/bash/bash.component';
+import { SshComponent } from './learn-linux/ssh/ssh.component';
+import { LearnSpringbootComponent } from './learn-springboot/learn-springboot.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { DockerComponent } from './learn-docker/docker/docker.component';
     LearnDockerComponent,
     AngularComponent,
     CardComponent,
-    DockerComponent
+    DockerComponent,
+    LearnLinuxComponent,
+    BashComponent,
+    SshComponent,
+    LearnSpringbootComponent
   ],
   imports: [
     BrowserModule,

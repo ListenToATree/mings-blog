@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <app-card title="SFTP" subtitle="Secure File Transfer Protocol" ngPreserveWhitespaces>
+        #### CONNECT
+        ```
+        sftp username@remote_hostname_or_IP
+        help //check manual
+        ```
+        #### BASIC
+        ```
+        --remote--
+        pwd
+        ls
+        cd
+        vim test.sh
+        --local--
+        lpwd
+        lls
+        lcd
+        !vim test.sh
+        ```
+        #### DOWNLOAD & UPLOAD
+        ```
+        get remoteFile
+        get -r remoteDirectory
+        put remoteFile
+        put -r remoteDirectory
+        ```
+      </app-card>
+    </div>
+  </div>
+</div>
