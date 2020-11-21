@@ -68,5 +68,19 @@
         ```
       </app-card>
     </div>
+
+    <div class="col-md-6">
+      <app-card title="Run Mysql in Docker" ngPreserveWhitespaces>
+        #### RUN MYSQL
+        ```
+        docker run --name ppe-product
+        -e MYSQL_ROOT_PASSWORD=root
+        -e MYSQL_USER=ming
+        -e MYSQL_PASSWORD=password
+        -e MYSQL_DATABASE=db
+        -d -p 3306:3306 mysql
+        ```
+      </app-card>
+    </div>
   </div>
 </div>

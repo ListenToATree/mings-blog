@@ -1,0 +1,20 @@
+<div class="example-action-buttons">
+  <button mat-button (click)="panelOpenState == false?accordion.openAll():accordion.closeAll()">
+    Expand/Collapse All
+  </button>
+</div>
+<mat-accordion class="example-headers-align" multi>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        14-11-2020
+      </mat-panel-title>
+      <mat-panel-description>
+        create ppe project
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    TEst
+  </mat-expansion-panel>
+
+</mat-accordion>

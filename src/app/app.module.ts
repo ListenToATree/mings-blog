@@ -16,6 +16,11 @@ import { LearnLinuxComponent } from './learn-linux/learn-linux.component';
 import { BashComponent } from './learn-linux/bash/bash.component';
 import { SshComponent } from './learn-linux/ssh/ssh.component';
 import { LearnSpringbootComponent } from './learn-springboot/learn-springboot.component';
+import { NgrxComponent } from './learn-angular/ngrx/ngrx.component';
+import { GitComponent } from './learn-linux/git/git.component';
+import { HomeComponent } from './home/home.component';
+import { LearnJavaComponent } from './learn-java/learn-java.component';
+import { ApacheCommonsComponent } from './learn-java/apache-commons/apache-commons.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,12 @@ import { LearnSpringbootComponent } from './learn-springboot/learn-springboot.co
     LearnLinuxComponent,
     BashComponent,
     SshComponent,
-    LearnSpringbootComponent
+    LearnSpringbootComponent,
+    NgrxComponent,
+    GitComponent,
+    HomeComponent,
+    LearnJavaComponent,
+    ApacheCommonsComponent
   ],
   imports: [
     BrowserModule,
